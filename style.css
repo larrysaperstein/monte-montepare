@@ -152,9 +152,13 @@ a:hover {
 }
 
 .bio-text p {
-  margin: 0;
+  margin: 0 0 1.25rem;
   color: var(--color-text-muted);
   font-size: 1.3rem;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
 }
 
 .bio-text em {
@@ -182,6 +186,17 @@ a:hover {
   flex-direction: column;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.action-buttons .btn {
+  border: 2px solid transparent;
+}
+
+.action-buttons .btn:hover {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: none;
 }
 
 /* BUTTONS */
@@ -252,7 +267,7 @@ a:hover {
   box-shadow: var(--shadow-soft);
 }
 
-/* COMEDY REELS */
+/* STORIES AND COMEDY */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
